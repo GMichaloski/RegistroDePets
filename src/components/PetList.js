@@ -1,7 +1,20 @@
-import Parent from "../services/getPetList";
+import React, { useEffect, useState } from "react";
+import { getPets } from "../services/pets";
+
+function Parent() {
+  const [pet, setPets] = useState([]);
+  useEffect(() => {
+    const requisicao = async () => {
+      const response = await getPets();
+      setPets(response.data.pets);
+    };
+    requisicao();
+  }, []);
+  return pet;
+}
 
 export default function PetList() {
-  const { pets } = Parent();
+  const pets = Parent();
   if (pets !== []) {
     return (
       <main>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { getPets } from "./pets";
+import { getPets } from "../services/pets";
 
-export default function Parent() {
+export default function RotaTeste() {
   const [pet, setPets] = useState([]);
   useEffect(() => {
     const requisicao = async () => {
@@ -10,6 +10,6 @@ export default function Parent() {
     };
     requisicao();
   }, []);
-  // console.log(pets);
-  return pet;
+  console.log(pet);
+  return <div>Rota vasco</div>;
 }
