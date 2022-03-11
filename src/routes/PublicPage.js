@@ -1,5 +1,11 @@
-import React from 'react'
+import React from "react";
+import PetList from "../components/PetList";
 
 export default function PublicPage() {
-  return <div>Rota Pública</div>
+  return (
+    <div>
+      <h2>Lista de Pets:</h2>
+      {/* <PetList></PetList> */}
+    </div>
+  );
 }

@@ -1,10 +1,10 @@
-import './App.css'
-import { Routes, Route } from 'react-router-dom'
-import PublicPage from './routes/PublicPage'
-import Layout from './components/Layout'
-import ProtectedPage from './routes/ProtectedPage'
-import Login from './routes/Login'
-import { AuthProvider, RequireAuth } from './context/auth-context'
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import PublicPage from "./routes/PublicPage";
+import Layout from "./components/Layout";
+import ProtectedPage from "./routes/ProtectedPage";
+import Login from "./routes/Login";
+import { AuthProvider, RequireAuth } from "./context/auth-context";
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
         </Route>
       </Routes>
     </AuthProvider>
-  )
+  );
 }
 
-export default App
+export default App;
