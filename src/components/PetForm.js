@@ -16,7 +16,7 @@ export default function PetForm() {
     console.log(data);
   };
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <label>
         Nome:
         <input type="text" name="name" />
@@ -35,16 +35,16 @@ export default function PetForm() {
       </label>
       <label>
         Gênero:
-        <select>
+        <select name="gender">
           <option value="male">Macho</option>
           <option value="female">Fêmea</option>
         </select>
       </label>
       <label>
         Url da foto:
-        <input type="text" name="name" />
+        <input type="text" name="url" />
       </label>
-      <input type="submit" onSubmit={handleSubmit} value="Enviar" />
+      <input type="submit" value="Enviar" />
     </form>
   );
 }

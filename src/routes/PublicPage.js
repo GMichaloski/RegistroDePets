@@ -5,7 +5,7 @@ export default function PublicPage() {
   return (
     <div>
       <h2>Lista de Pets:</h2>
-      <PetList></PetList>
+      <PetList />
     </div>
   );
 }
