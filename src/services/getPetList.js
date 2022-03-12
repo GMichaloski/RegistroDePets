@@ -10,6 +10,5 @@ export default function Parent() {
     };
     requisicao();
   }, []);
-  // console.log(pets);
   return pet;
 }

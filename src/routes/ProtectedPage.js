@@ -7,7 +7,7 @@ export default function ProtectedPage() {
   return (
     <div>
       <h2>Cadastre seu pet!</h2>
-      <PetForm />
+      <PetForm/>
     </div>
   );
 }
